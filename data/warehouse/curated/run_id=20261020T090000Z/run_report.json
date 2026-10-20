@@ -1,0 +1,110 @@
+{
+  "run_id": "20261020T090000Z",
+  "source": "foodcom",
+  "inputs": {
+    "foodcom": "/Users/mayur/Desktop/New world begins/BDA/data/raw/foodcom/RAW_recipes.csv"
+  },
+  "profile": "lite",
+  "previous_run_id": "20261020T080000Z",
+  "status": "published",
+  "input_rows": 231637,
+  "quarantined": 2,
+  "promoted_ingredients": 2839,
+  "per_source_valid_rows": {
+    "foodcom": 231635
+  },
+  "recipes_before_dedup": 231635,
+  "duplicates_dropped": 52,
+  "out_of_range_recipes": 3010,
+  "recipes_without_resolved_ingredients": 34,
+  "rule_version": "rules-4acc8bdd",
+  "core_version": "0.1.0",
+  "tables": {
+    "recipes": {
+      "rows": 231583,
+      "files": 1
+    },
+    "recipe_ingredients": {
+      "rows": 2096178,
+      "files": 3
+    },
+    "recipe_steps": {
+      "rows": 2261597,
+      "files": 4
+    },
+    "recipe_utensils": {
+      "rows": 489823,
+      "files": 1
+    },
+    "cuisine_summary": {
+      "rows": 27,
+      "files": 1
+    },
+    "ingredient_dim": {
+      "rows": 2997,
+      "files": 1
+    },
+    "ingredient_alias": {
+      "rows": 3248,
+      "files": 1
+    },
+    "substitution_rules": {
+      "rows": 72,
+      "files": 1
+    },
+    "search_docs": {
+      "rows": 231549,
+      "files": 1
+    }
+  },
+  "dq_status": "warn",
+  "started_at": "2026-10-20T07:53:16Z",
+  "finished_at": "2026-10-20T07:56:29Z",
+  "stages": [
+    {
+      "stage": "STG-01 ingest + validate",
+      "seconds": 1.02,
+      "detail": "231637 in (foodcom 231635), 2 quarantined"
+    },
+    {
+      "stage": "STG-02 ids + explode",
+      "seconds": 0.09,
+      "detail": ""
+    },
+    {
+      "stage": "STG-03 parse lines",
+      "seconds": 0.05,
+      "detail": ""
+    },
+    {
+      "stage": "STG-04 canonicalise",
+      "seconds": 27.99,
+      "detail": "2839 ingredients auto-promoted"
+    },
+    {
+      "stage": "STG-05 enrich + dedup",
+      "seconds": 30.95,
+      "detail": "52 duplicates dropped"
+    },
+    {
+      "stage": "STG-06a rules validate",
+      "seconds": 2.37,
+      "detail": "72 rules, version rules-4acc8bdd"
+    },
+    {
+      "stage": "STG-06b write silver",
+      "seconds": 114.36,
+      "detail": "14 files"
+    },
+    {
+      "stage": "DQ gates G1-G9",
+      "seconds": 1.96,
+      "detail": ""
+    },
+    {
+      "stage": "G10 NER agreement",
+      "seconds": 0.04,
+      "detail": "warn"
+    }
+  ]
+}

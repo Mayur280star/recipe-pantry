@@ -1,0 +1,437 @@
+{
+  "status": "warn",
+  "gates": [
+    {
+      "id": "G1",
+      "name": "input rows vs previous run",
+      "status": "ok",
+      "value": 0.0,
+      "detail": "231637 -> 231637"
+    },
+    {
+      "id": "G2",
+      "name": "recipe_id unique",
+      "status": "ok",
+      "value": 0,
+      "detail": ""
+    },
+    {
+      "id": "G3",
+      "name": "required content present %",
+      "status": "ok",
+      "value": 99.999,
+      "detail": "2 quarantined"
+    },
+    {
+      "id": "G4a",
+      "name": "lines parsed %",
+      "status": "ok",
+      "value": 99.904,
+      "detail": ""
+    },
+    {
+      "id": "G4b",
+      "name": "lines resolved to canonical id % (frequency-weighted)",
+      "status": "ok",
+      "value": 97.63,
+      "detail": ""
+    },
+    {
+      "id": "G5",
+      "name": "orphan child rows",
+      "status": "ok",
+      "value": 0,
+      "detail": ""
+    },
+    {
+      "id": "G6",
+      "name": "out-of-range time/calories %",
+      "status": "warn",
+      "value": 1.3,
+      "detail": "3010 recipes, values set to NULL"
+    },
+    {
+      "id": "G7",
+      "name": "search index count == search_docs",
+      "status": "skipped",
+      "value": null,
+      "detail": "no Solr in this profile"
+    },
+    {
+      "id": "G8",
+      "name": "substitution rules valid",
+      "status": "ok",
+      "value": 0,
+      "detail": ""
+    },
+    {
+      "id": "G9",
+      "name": "rule ids exist in ingredient_dim",
+      "status": "ok",
+      "value": 0,
+      "detail": ""
+    },
+    {
+      "id": "G10",
+      "name": "parser agreement with RecipeNLG NER %",
+      "status": "skipped",
+      "value": null,
+      "detail": "no source with NER in this run"
+    }
+  ],
+  "counts": {
+    "input_rows": 231637,
+    "quarantined": 2,
+    "recipes": 231583,
+    "ingredient_lines": 2096178,
+    "parsed_lines": 2094172,
+    "resolved_lines": 2044534
+  },
+  "top_unresolved": [
+    {
+      "name": "2 low-fat milk",
+      "lines": 543
+    },
+    {
+      "name": "1 low-fat milk",
+      "lines": 472
+    },
+    {
+      "name": "a 1 original sauce",
+      "lines": 195
+    },
+    {
+      "name": "v8 vegetable juice",
+      "lines": 110
+    },
+    {
+      "name": "7-up soda",
+      "lines": 78
+    },
+    {
+      "name": "2 cheddar cheese",
+      "lines": 68
+    },
+    {
+      "name": "9-inch pie shell",
+      "lines": 63
+    },
+    {
+      "name": "unbaked 9-inch pie shell",
+      "lines": 59
+    },
+    {
+      "name": "8-inch flour tortilla",
+      "lines": 56
+    },
+    {
+      "name": "heinz 57 steak sauce",
+      "lines": 52
+    },
+    {
+      "name": "35 cream",
+      "lines": 49
+    },
+    {
+      "name": "10-inch flour tortilla",
+      "lines": 48
+    },
+    {
+      "name": "9 unbaked pie shell",
+      "lines": 48
+    },
+    {
+      "name": "90 lean ground beef",
+      "lines": 43
+    },
+    {
+      "name": "9-inch graham cracker crust",
+      "lines": 42
+    },
+    {
+      "name": "98 fat-free cream of chicken soup",
+      "lines": 42
+    },
+    {
+      "name": "98 fat-free cream of mushroom soup",
+      "lines": 42
+    },
+    {
+      "name": "unbaked 9-inch pie crust",
+      "lines": 36
+    },
+    {
+      "name": "7-up",
+      "lines": 34
+    },
+    {
+      "name": "pastry for a double-crust 9-inch pie",
+      "lines": 33
+    },
+    {
+      "name": "1 fat cottage cheese",
+      "lines": 32
+    },
+    {
+      "name": "2 fat cottage cheese",
+      "lines": 31
+    },
+    {
+      "name": "unbaked 9-inch deep dish pie pastry",
+      "lines": 31
+    },
+    {
+      "name": "80 lean ground beef",
+      "lines": 29
+    },
+    {
+      "name": "6-inch flour tortilla",
+      "lines": 27
+    },
+    {
+      "name": "2 evaporated milk",
+      "lines": 26
+    },
+    {
+      "name": "9-inch deep dish pie crust",
+      "lines": 26
+    },
+    {
+      "name": "persimmon",
+      "lines": 25
+    },
+    {
+      "name": "spicy v8",
+      "lines": 25
+    },
+    {
+      "name": "1 fat buttermilk",
+      "lines": 24
+    },
+    {
+      "name": "6-inch corn tortilla",
+      "lines": 24
+    },
+    {
+      "name": "9-inch baked pie crust",
+      "lines": 24
+    },
+    {
+      "name": "almond oil",
+      "lines": 24
+    },
+    {
+      "name": "apple brandy",
+      "lines": 24
+    },
+    {
+      "name": "black bean garlic sauce",
+      "lines": 24
+    },
+    {
+      "name": "bone-in ham",
+      "lines": 24
+    },
+    {
+      "name": "calf liver",
+      "lines": 24
+    },
+    {
+      "name": "chocolate bar",
+      "lines": 24
+    },
+    {
+      "name": "chocolate graham cracker crumb",
+      "lines": 24
+    },
+    {
+      "name": "coriander root",
+      "lines": 24
+    },
+    {
+      "name": "curd",
+      "lines": 24
+    },
+    {
+      "name": "cut okra",
+      "lines": 24
+    },
+    {
+      "name": "deviled ham",
+      "lines": 24
+    },
+    {
+      "name": "distilled vinegar",
+      "lines": 24
+    },
+    {
+      "name": "dry bread cube",
+      "lines": 24
+    },
+    {
+      "name": "dry parsley flake",
+      "lines": 24
+    },
+    {
+      "name": "fat free cheese",
+      "lines": 24
+    },
+    {
+      "name": "fermented black bean",
+      "lines": 24
+    },
+    {
+      "name": "fines herbe",
+      "lines": 24
+    },
+    {
+      "name": "fish steak",
+      "lines": 24
+    }
+  ],
+  "rule_issues": [],
+  "rule_coverage": [
+    {
+      "code": "V10",
+      "severity": "info",
+      "rule_id": "-",
+      "message": "top ingredient 'salt' (110134 recipes) has no rule"
+    },
+    {
+      "code": "V10",
+      "severity": "info",
+      "rule_id": "-",
+      "message": "top ingredient 'water' (42694 recipes) has no rule"
+    },
+    {
+      "code": "V10",
+      "severity": "info",
+      "rule_id": "-",
+      "message": "top ingredient 'olive_oil' (40675 recipes) has no rule"
+    },
+    {
+      "code": "V10",
+      "severity": "info",
+      "rule_id": "-",
+      "message": "top ingredient 'vanilla_extract' (24810 recipes) has no rule"
+    },
+    {
+      "code": "V10",
+      "severity": "info",
+      "rule_id": "-",
+      "message": "top ingredient 'tomato' (24514 recipes) has no rule"
+    },
+    {
+      "code": "V10",
+      "severity": "info",
+      "rule_id": "-",
+      "message": "top ingredient 'cinnamon' (20975 recipes) has no rule"
+    },
+    {
+      "code": "V10",
+      "severity": "info",
+      "rule_id": "-",
+      "message": "top ingredient 'bell_pepper' (18006 recipes) has no rule"
+    },
+    {
+      "code": "V10",
+      "severity": "info",
+      "rule_id": "-",
+      "message": "top ingredient 'carrot' (14817 recipes) has no rule"
+    },
+    {
+      "code": "V10",
+      "severity": "info",
+      "rule_id": "-",
+      "message": "top ingredient 'baking_soda' (14364 recipes) has no rule"
+    },
+    {
+      "code": "V10",
+      "severity": "info",
+      "rule_id": "-",
+      "message": "top ingredient 'ginger' (13672 recipes) has no rule"
+    },
+    {
+      "code": "V10",
+      "severity": "info",
+      "rule_id": "-",
+      "message": "top ingredient 'cheddar' (12143 recipes) has no rule"
+    },
+    {
+      "code": "V10",
+      "severity": "info",
+      "rule_id": "-",
+      "message": "top ingredient 'celery' (12133 recipes) has no rule"
+    },
+    {
+      "code": "V10",
+      "severity": "info",
+      "rule_id": "-",
+      "message": "top ingredient 'cumin' (11465 recipes) has no rule"
+    },
+    {
+      "code": "V10",
+      "severity": "info",
+      "rule_id": "-",
+      "message": "top ingredient 'potato' (11301 recipes) has no rule"
+    },
+    {
+      "code": "V10",
+      "severity": "info",
+      "rule_id": "-",
+      "message": "top ingredient 'garlic_powder' (10887 recipes) has no rule"
+    },
+    {
+      "code": "V10",
+      "severity": "info",
+      "rule_id": "-",
+      "message": "top ingredient 'lemon' (10354 recipes) has no rule"
+    },
+    {
+      "code": "V10",
+      "severity": "info",
+      "rule_id": "-",
+      "message": "top ingredient 'mushroom' (9855 recipes) has no rule"
+    },
+    {
+      "code": "V10",
+      "severity": "info",
+      "rule_id": "-",
+      "message": "top ingredient 'powdered_sugar' (9747 recipes) has no rule"
+    },
+    {
+      "code": "V10",
+      "severity": "info",
+      "rule_id": "-",
+      "message": "top ingredient 'nutmeg' (9316 recipes) has no rule"
+    },
+    {
+      "code": "V10",
+      "severity": "info",
+      "rule_id": "-",
+      "message": "top ingredient 'paprika' (8549 recipes) has no rule"
+    },
+    {
+      "code": "V10",
+      "severity": "info",
+      "rule_id": "-",
+      "message": "top ingredient 'cayenne_pepper' (8136 recipes) has no rule"
+    },
+    {
+      "code": "V10",
+      "severity": "info",
+      "rule_id": "-",
+      "message": "top ingredient 'worcestershire_sauce' (7832 recipes) has no rule"
+    },
+    {
+      "code": "V10",
+      "severity": "info",
+      "rule_id": "-",
+      "message": "top ingredient 'bacon' (7457 recipes) has no rule"
+    }
+  ],
+  "ner_agreement": null,
+  "per_source_valid_rows": {
+    "foodcom": 231635
+  }
+}
